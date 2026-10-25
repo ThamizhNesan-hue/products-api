@@ -36,4 +36,9 @@ public class ProductService {
                 .filter(p -> p.getName().contains(name))
                 .toList();
     }
+
+    public ProductService(){
+        products.add(new DigitalProduct( 1L,"Java Programming eBook", 19.99, "https://example.com/java-ebook", 25.5));
+        products.add(new PhysicalProduct(2L, "Wireless Mouse", 29.99, 0.25, "10 x 6 x 4 cm"));
+    }
 }
